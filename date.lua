@@ -1,0 +1,16 @@
+local micro = import("micro")
+local buffer = import("micro/buffer")
+local utf = import("unicode/utf8")
+
+
+function insertDate(bp)
+	local msgStart = buffer.Loc(bp.Buf:GetActiveCursor().Loc.X, bp.Buf:GetActiveCursor().Loc.y)
+	bp.Buf:Insert(msgStart, os.date("[%d/%m/%y %a]"))
+	return false
+end
+
+function insertTime(bp)
+	local msgStart = buffer.Loc(bp.Buf:GetActiveCursor().Loc.X, bp.Buf:GetActiveCursor().Loc.y)
+	bp.Buf:Insert(msgStart, os.date("[%H:%M]"));
+	return false
+end

@@ -1,0 +1,15 @@
+[{
+  "Name": "time-and-date",
+  "Description": "Insert time or date with a keyboard shortcut",
+  "Website": "https://github.com/0x0000ff/date",
+  "Tags": ["python", "linting"],
+  "Versions": [
+    {
+      "Version": "1.0.0",
+      "Url": "https://github.com/0x0000ff/date/archive/v1.0.0.zip",
+      "Require": {
+        "micro": ">=2.0.13"
+      }
+    }
+  ]
+}]
