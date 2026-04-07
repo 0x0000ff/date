@@ -1,5 +1,5 @@
 [{
-  "Name": "time-and-date",
+  "Name": "date",
   "Description": "Insert time or date with a keyboard shortcut",
   "Website": "https://github.com/0x0000ff/date",
   "Tags": ["python", "linting"],
