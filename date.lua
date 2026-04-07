@@ -1,7 +1,5 @@
 local micro = import("micro")
 local buffer = import("micro/buffer")
-local utf = import("unicode/utf8")
-
 
 function insertDate(bp)
 	local msgStart = buffer.Loc(bp.Buf:GetActiveCursor().Loc.X, bp.Buf:GetActiveCursor().Loc.y)
