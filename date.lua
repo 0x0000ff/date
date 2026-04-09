@@ -3,13 +3,13 @@ local buffer = import("micro/buffer")
 
 function insertDate(bp)
 	local msgStart = buffer.Loc(bp.Buf:GetActiveCursor().Loc.X, bp.Buf:GetActiveCursor().Loc.y)
-	bp.Buf:Insert(msgStart, os.date("<%d/%m/%y>"))
+	bp.Buf:Insert(msgStart, os.date("<%x>"))
 	return false
 end
 
 function insertDateWithDay(bp)
 	local msgStart = buffer.Loc(bp.Buf:GetActiveCursor().Loc.X, bp.Buf:GetActiveCursor().Loc.y)
-	bp.Buf:Insert(msgStart, os.date("<%d/%m/%y %a>"))
+	bp.Buf:Insert(msgStart, os.date("<%x %a>"))
 	return false
 end
 
